@@ -1,9 +1,13 @@
+/* This is the nav bar CSS style sheet, it can be used to generally style any website using the corresponding HTML. */
+
+
+
 
 /* Added the root where you can add variables to reference all over the place, by simply using the var() function. 
 This allows the change in one place to change multiple variables around the code.*/
 :root {
     --head-foot: white;
-    
+
 }
 
 /* Pre-loading in the color images for the hover effect this stops the initial stutter when you 
