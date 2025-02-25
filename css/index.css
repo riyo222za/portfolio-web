@@ -15,4 +15,7 @@ main {
     background-size: 60vh, cover;
     background-repeat: no-repeat;
     background-position: bottom, center;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
