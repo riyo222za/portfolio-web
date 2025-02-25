@@ -53,15 +53,15 @@ h1 {
 
 p {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 30px;
     color: white;
     font-family: var(--site-font);
 
 }
 
 h2 {
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 28px;
+    line-height: 31px;
     color: white;
     font-family: var(--site-font);
     font-weight: 600;
