@@ -35,16 +35,17 @@ main a {
     margin-top: 20px;
     font-size: 18px;
     display: block;
-    background-color: var(--site-color-1-hover);
+    background-color: white;
     padding: 10px 20px;
     width: fit-content;
     border-radius: 27px;
+    color: #1e1e1e;
 }
 
 main a:hover{
     
-    background-color: white;
-    color: var(--site-color-1-hover);
+    background-color: var(--site-color-1-hover);
+    color: white;
     
 }
 
