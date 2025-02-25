@@ -17,7 +17,7 @@ This allows the change in one place to change multiple variables around the code
 hover over the actual links/images.
 This smooths out the hover effect of the images changing. */
 body::after {
-    content: url(../img/instagram-color.png) url(../img/github-color.png) url(../img/linkedin-color.png);
+    content: url(../img/instagram-color.png) url(../img/github-color.png) url(../img/linkedin-color.png) url(../img/me.png) url(../img/bg.png);
     position: absolute;
     height: 0;
     width: 0;
