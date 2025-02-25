@@ -1,15 +1,15 @@
-/* This will refer to the rest of the HTML sheet after the header.css stylesheet */
+/* This will refer to the rest of the HTML sheet after the header.css   */
 
 
 main {
     width: 100%;
     /* This calc function helps to move the rest of the website below the sticky header, 
-    the header is 60px high and it cutsoff the next section, 
+    the header is 60px high and it cuts-off the next section, 
     so we use the calc to essentially push the rest of the website slightly 
     down so the top is not hidden by the website header which is locked to the top */
     height: calc(100vh - 60px);
     margin-top: 60px;
-    /* for the background image, there is a hierarchy, so put them in stackable order of what should be in front vs behind */
+    /* for the background image, there is a hierarchy, so put them in stack order of what should be in front vs behind */
     background-image: url(../img/me.png), url(../img/bg.png);
     /* VH is good because it actually adjusts the size of the image based on device size */
     background-size: 60vh, cover;
@@ -118,18 +118,24 @@ main .main-intro {
     align-items: center;
     position: relative; /*This adds the dark hover effect*/
     
-  
-   
 }
 
-/* the reason we are starting at 2 here is becausee the paragraph counts as a child so it is one */
+/* the reason we are starting at 2 here is because the paragraph counts as a child so it is one */
 
 .index-category-box:nth-child(2) {
     background-image: url(../img/web.png);
+    border: 2px black;
+    border-style: solid;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .index-category-box:nth-child(3) {
     background-image: url(../img/tax.png);
+    border: 2px black;
+    border-style: solid;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .index-category-box:nth-child(3):hover {
@@ -141,10 +147,18 @@ main .main-intro {
 
 .index-category-box:nth-child(4) {
     background-image: url(../img/tax.png);
+    border: 2px black;
+    border-style: solid;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .index-category-box:nth-child(5) {
     background-image: url(../img/cons.png);
+    border: 2px black;
+    border-style: solid;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 /* How to add dark hover in effect */
@@ -158,6 +172,8 @@ main .main-intro {
     background-color: #000;
     opacity: 0.5;
     transition: all ease-in-out 200ms;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 
 }
 
