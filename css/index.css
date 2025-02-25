@@ -116,6 +116,9 @@ main .main-intro {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /*This adds the dark hover effect*/
+    
+  
    
 }
 
@@ -123,12 +126,10 @@ main .main-intro {
 
 .index-category-box:nth-child(2) {
     background-image: url(../img/web.png);
-   
 }
 
 .index-category-box:nth-child(3) {
     background-image: url(../img/tax.png);
-   
 }
 
 .index-category-box:nth-child(3):hover {
@@ -140,13 +141,31 @@ main .main-intro {
 
 .index-category-box:nth-child(4) {
     background-image: url(../img/tax.png);
-   
 }
 
 .index-category-box:nth-child(5) {
     background-image: url(../img/cons.png);
-   
 }
+
+/* How to add dark hover in effect */
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+
+}
+
+.index-category-box:hover .dark-overlay {
+    opacity: 0;
+}
+
+/* Ending dark hover effect */
 
 .index-category-box h3 {
     font-size: 20px;
@@ -154,6 +173,6 @@ main .main-intro {
     color: black;
     /* How to create text shadow */
     text-shadow: -2px 2px 4px #000;
-
+    z-index: 100; /*Also important for the dark hover effect*/
 }
 
