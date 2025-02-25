@@ -1,12 +1,15 @@
 /* This is the nav bar CSS style sheet, it can be used to generally style any website using the corresponding HTML. */
 
-
+/* This will also create the default styling for most items in the webpage */
 
 
 /* Added the root where you can add variables to reference all over the place, by simply using the var() function. 
 This allows the change in one place to change multiple variables around the code.*/
 :root {
     --head-foot: white;
+    --site-color-1: red;
+    --site-color-1-hover: rgb(168, 14, 14);
+    --site-font: 'Roboto','sans-serif'
 
 }
 
@@ -14,7 +17,6 @@ This allows the change in one place to change multiple variables around the code
 hover over the actual links/images.
 This smooths out the hover effect of the images changing. */
 body::after {
-
     content: url(../img/instagram-color.png) url(../img/github-color.png) url(../img/linkedin-color.png);
     position: absolute;
     height: 0;
@@ -32,7 +34,42 @@ body {
 This adds a different cursor when you hover over any links on the website. */
 a {
     cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: var(--site-font);
 }
+
+/* Adding the default to other properties as the reset sheet has reset those */
+
+h1 {
+    font-size: 26px;
+    line-height: 32px;
+    color: white;
+    font-family: var(--site-font);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: var(--site-font);
+
+}
+
+h2 {
+    font-size: 15px;
+    line-height: 21px;
+    color: white;
+    font-family: var(--site-font);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+/* Default styling ends here */
 
 header {
     background-color: var(--head-foot); 
@@ -40,7 +77,11 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    /* Adding the sticky website header */
+    position: fixed;
+    top: 0;
+    /* The z-index keeps on the front always */
+    z-index: 1000;
 }
 
 
