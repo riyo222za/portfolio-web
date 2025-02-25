@@ -3,9 +3,21 @@
 This allows the change in one place to change multiple variables around the code.*/
 :root {
     --head-foot: white;
+    
 }
 
+/* Pre-loading in the color images for the hover effect this stops the initial stutter when you 
+hover over the actual links/images.
+This smooths out the hover effect of the images changing. */
+body::after {
 
+    content: url(../img/instagram-color.png) url(../img/github-color.png) url(../img/linkedin-color.png);
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    z-index: -10;
+}
 
 body {
     background-color: #1e1e1e;
