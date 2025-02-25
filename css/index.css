@@ -83,3 +83,77 @@ main .main-intro {
     right: 10vh;
 
 }
+
+/* Category Styling */
+
+.index-category {
+    width: 100%;
+    padding: 60px 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.index-category p {
+    color: black;
+    text-align: center;
+    padding: 40px;
+    flex-basis: 100%;
+    font-size: 30px;
+
+
+}
+
+.index-category-box {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* the reason we are starting at 2 here is becausee the paragraph counts as a child so it is one */
+
+.index-category-box:nth-child(2) {
+    background-image: url(../img/web.png);
+   
+}
+
+.index-category-box:nth-child(3) {
+    background-image: url(../img/tax.png);
+   
+}
+
+.index-category-box:nth-child(3):hover {
+    background-image: url(../img/calculator-8495_256.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.index-category-box:nth-child(4) {
+    background-image: url(../img/tax.png);
+   
+}
+
+.index-category-box:nth-child(5) {
+    background-image: url(../img/cons.png);
+   
+}
+
+.index-category-box h3 {
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+    /* How to create text shadow */
+    text-shadow: -2px 2px 4px #000;
+
+}
+

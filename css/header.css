@@ -17,7 +17,7 @@ This allows the change in one place to change multiple variables around the code
 hover over the actual links/images.
 This smooths out the hover effect of the images changing. */
 body::after {
-    content: url(../img/instagram-color.png) url(../img/github-color.png) url(../img/linkedin-color.png) url(../img/me.png) url(../img/bg.png);
+    content: url(../img/instagram-color.png) url(../img/github-color.png) url(../img/linkedin-color.png) url(../img/me.png) url(../img/bg.png) url(../img/calculator-8495_256.gif);
     position: absolute;
     height: 0;
     width: 0;
@@ -62,6 +62,16 @@ p {
 h2 {
     font-size: 15px;
     line-height: 21px;
+    color: white;
+    font-family: var(--site-font);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 12px;
+    line-height: 18px;
     color: white;
     font-family: var(--site-font);
     font-weight: 600;
