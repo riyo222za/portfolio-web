@@ -66,6 +66,12 @@ main .main-quotes p{
     margin: 40px 0;
 }
 
+/* You can use the nth child pseudo class to target the 2nd etc of a specified container */
+
+main .main-quotes p:nth-child(3){
+   margin-left: 100px;
+}
+
 main .main-quotes {
     position: relative;
     left: 4vh;
