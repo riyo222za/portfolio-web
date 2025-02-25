@@ -9,7 +9,6 @@ main {
     down so the top is not hidden by the website header which is locked to the top */
     height: calc(100vh - 60px);
     margin-top: 60px;
-
     /* for the background image, there is a heirachy, so put them in stackable order of what should be in front vs behind */
     background-image: url(../img/me.png), url(../img/bg.png);
     /* VH is good because it actually adjusts the size of the image based on device size */
