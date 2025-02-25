@@ -12,6 +12,8 @@ body {
     
 }
 
+/* Due to the reset.css style sheet it removes the cursor for links.
+This adds a different cursor when you hover over any links on the website. */
 a {
     cursor: pointer;
 }
@@ -27,7 +29,7 @@ header {
 
 
 .left {
-    background-color: blue;
+    /* background-color: blue; */
     height: 100%;
     width: fit-content;
     padding-left: 60px;
@@ -39,16 +41,28 @@ header {
    
 }
 
+/* the below allows you to shift the line items next to each other in the list */
 .left ul li {
     display: inline;
     float: left;
    
 }
 
+/* The below is changing the actual links it allows you  to select the link/click the button without being directly on the word but instead in its general vicinity. I have also added the height of it to stretch across the header which then lets you click anywhere within the header. 
+I have also added a default color for the text to be black so nothing overrides it */
+
 .left ul li a {
     padding: 0 10px;
     font-family: 'Roboto',sans-serif;
     line-height: 60px;
+    color: black;
+    height: 100%;
+    display: block;
+}
+
+/* The below adds a hover effect to the menu items/links, so that the color of the text changes to red depending on where you are hovering over. */
+.left ul li a:hover{
+   color: red;
 }
 
 .left img {
@@ -57,14 +71,14 @@ header {
 }
 
 .menu-items {
-    background-color: rgb(132, 0, 255);
+    /* background-color: rgb(132, 0, 255); */
     height: 100%;
     width: fit-content;
     
 }
 
 .sm-links {
-    background-color: rgb(217, 255, 0);
+    /* background-color: rgb(217, 255, 0); */
     height: 100%;
     width: fit-content;
     padding-right: 60px;
@@ -73,6 +87,9 @@ header {
     column-gap: 10px;
 }
 
+/* For the next 3 sections below. 
+Instead of adding the images in the HTML they were added so that we can assign a property to the link instead of making the link a picture.
+ */
 .sm-links-gh{ 
     width: 20px;
     height: 20px;
