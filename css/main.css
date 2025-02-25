@@ -113,3 +113,23 @@ Instead of adding the images in the HTML they were added so that we can assign a
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Adding the hover effects for the images above */
+
+.sm-links-gh:hover{ 
+    
+    background-image: url(../img/github-color.png);
+    
+}
+
+.sm-links-ln:hover{ 
+    
+    background-image: url(../img/linkedin-color.png);
+    
+}
+
+.sm-links-in:hover{ 
+    
+    background-image: url(../img/instagram-color.png);
+    
+}
