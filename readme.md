@@ -18,3 +18,10 @@ I will update this as I make big changes to the webpage.
 
 I will be adding comments to some places in the code so I can reference back to what I have done there so the code might be a bit bloated.
 
+---------------------------------------------------
+
+2025/02/25 10:53am
+
+The nav bar is now complete. I have added a lot of comments to the code so that I can refer back to certain sections for future reference.
+
+I have structured it in such a way that I can use this for basic and generic websites in the future.
