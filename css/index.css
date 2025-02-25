@@ -57,6 +57,7 @@ main .main-quotes h2{
     /* border-left: solid; */
     border-color: white;
     padding-left: 10px;
+    text-decoration: underline;
 }
 
 main .main-quotes p{
