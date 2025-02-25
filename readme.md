@@ -58,3 +58,11 @@ I played around a bit with the borders and also adding a gif as a hover effect w
 Next up is creating the about me section on the main page.
 
 Just take into account there is a lot of filler information for the time being, like placeholder images and text.
+
+------------------------------------------------------------------
+
+2025/02/25 17:05pm
+
+Completed the about section.
+
+Only cool thing of note here was creating "skill bars"
