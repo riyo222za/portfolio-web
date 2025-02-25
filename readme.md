@@ -16,3 +16,5 @@ This will be almost a journal and description of what I am learning and how I am
 
 I will update this as I make big changes to the webpage.
 
+I will be adding comments to some places in the code so I can reference back to what I have done there so the code might be a bit bloated.
+
