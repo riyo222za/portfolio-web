@@ -26,6 +26,8 @@ The nav bar is now complete. I have added a lot of comments to the code so that 
 
 I have structured it in such a way that I can use this for basic and generic websites in the future.
 
+The nav bar actually has icons which link to my different social media platforms for professionals and is black and white and once you hover over it, it actually changes to color.
+
 --------------------------------------------------------
 
 2025/02/25 11:30am
@@ -38,3 +40,21 @@ default styling on the webpage.
 I then added some background images.
 
 I learnt that the calc function can be used to help with calculating where things should be.
+
+-------------------------------------------------------------
+
+2025/02/25 16:03pm
+
+After working on the hero section, I took it upon my self to add a log menu and page.
+The purpose of this is to actually put this on the website and keep it up to do date with this file.
+That took a bit of time and I created only the hero section of but haven't actually filled out any of the content there.
+
+The Category section is now complete, I learnt a few new techniques for a dark hover effect.
+
+I followed a tutorial and think I have a bit of a better way to actually design this, it is a little bit more cumbersome but works slightly better.
+
+I played around a bit with the borders and also adding a gif as a hover effect which is pretty cool.
+
+Next up is creating the about me section on the main page.
+
+Just take into account there is a lot of filler information for the time being, like placeholder images and text.
