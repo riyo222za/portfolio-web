@@ -1,0 +1,12 @@
+/* This will refer to the rest of the HTML sheet after the header.css stylesheet */
+
+
+main {
+    width: 100%;
+    /* This calc function helps to move the rest of the website below the sticky header, 
+    the header is 60px high and it cutsoff the next section, 
+    so we use the calc to essentially push the rest of the website slightly 
+    down so the top is not hidden by the website header which is locked to the top */
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+}
