@@ -192,6 +192,9 @@ main .main-intro {
 .index-about {
     width: 100%;
     padding: 60px 0;
+   
+}
+.index-about-flex {
     display: flex;
     align-items: center;
     justify-content: center;

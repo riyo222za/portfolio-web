@@ -30,6 +30,11 @@ body {
     
 }
 
+.wrapper-main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
 /* Due to the reset.css style sheet it removes the cursor for links.
 This adds a different cursor when you hover over any links on the website. */
 a {
