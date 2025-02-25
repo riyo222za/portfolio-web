@@ -66,5 +66,33 @@ header {
 .sm-links {
     background-color: rgb(217, 255, 0);
     height: 100%;
-    width: 30px;
-padding-right: 60px;}
+    width: fit-content;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.sm-links-gh{ 
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/github.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sm-links-ln{ 
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sm-links-in{ 
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
