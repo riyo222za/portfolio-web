@@ -1,5 +1,5 @@
 
-/* Added the root where you can add variables to reference all over the place, by simply usiing the var() function. 
+/* Added the root where you can add variables to reference all over the place, by simply using the var() function. 
 This allows the change in one place to change multiple variables around the code.*/
 :root {
     --head-foot: white;
