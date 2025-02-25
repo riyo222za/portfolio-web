@@ -1,3 +1,35 @@
+
+/* Added the root where you can add variables to reference all over the place, by simply usiing the var() function. 
+This allows the change in one place to change multiple variables around the code.*/
+:root {
+    --head-foot: white;
+}
+
+
+
 body {
     background-color: #1e1e1e;
 }
+
+.header-main {
+    /* Added the VAR() so that it will reference the above root  */
+    background-color: var(--head-foot); 
+    height: 60px;
+    width: 100%;
+}
+
+.logo {
+    background-color: blue;
+    height: 100%;
+    width: 30px;
+}
+
+.menu-items {
+    background-color: rgb(132, 0, 255);
+    height: 100%;
+    width: 30px;}
+
+.sm-links {
+    background-color: rgb(217, 255, 0);
+    height: 100%;
+    width: 30px;}
