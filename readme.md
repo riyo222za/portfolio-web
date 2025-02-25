@@ -66,3 +66,9 @@ Just take into account there is a lot of filler information for the time being, 
 Completed the about section.
 
 Only cool thing of note here was creating "skill bars"
+
+---------------------------------------------------------------------
+
+2025/02/25 21:56pm
+
+Finished the footer and sitemap of the website.
