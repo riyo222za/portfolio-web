@@ -205,3 +205,99 @@ Instead of adding the images in the HTML they were added so that we can assign a
     background-image: url(../img/instagram-color.png);
     
 }
+
+/* FOOTER STARTS HERE */
+
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #141414;
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-testemoni {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    
+}
+
+.footer-testemoni img {
+    width: 60%;
+    border-radius: 50px;
+}
+
+.footer-testemoni p{
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 20px 0px;
+    line-height: 18px;
+
+}
+
+.footer-getintouch {
+    margin: 40px 0 60px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-weight: 900px;
+    transition: all ease-in-out 200ms;
+   
+}
+
+.footer-getintouch:hover {
+    border-color: red;
+    color: red;
+}
+
+.footer-sitemap {
+    flex-basis: 100%;
+    display: flex;
+
+}
+
+.footer-sitemap a{
+    line-height: 30px;
+}
+
+.footer-sitemap a:hover{
+    color: red;
+}
+
+
+.footer-sitemap ul:nth-child(1){
+    border-left: 2px solid red;
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1),
+.footer-sitemap ul:nth-child(2) {
+    flex-basis: 180px;
+
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 340px;
+
+}
+
+.footer-sitemap p {
+   text-transform: uppercase;
+   line-height: 30px;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+    
+}
+
+.footer-sitemap ul:nth-child(4) li{
+    clear: both;
+    float: right;
+    
+}
