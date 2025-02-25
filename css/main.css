@@ -9,27 +9,62 @@ This allows the change in one place to change multiple variables around the code
 
 body {
     background-color: #1e1e1e;
+    
 }
 
-.header-main {
-    /* Added the VAR() so that it will reference the above root  */
+a {
+    cursor: pointer;
+}
+
+header {
     background-color: var(--head-foot); 
     height: 60px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.logo {
+
+.left {
     background-color: blue;
     height: 100%;
-    width: 30px;
+    width: fit-content;
+    padding-left: 60px;
+    display: flex;
+}
+
+.left ul {
+    margin-left: 10px;
+   
+}
+
+.left ul li {
+    display: inline;
+    float: left;
+   
+}
+
+.left ul li a {
+    padding: 0 10px;
+    font-family: 'Roboto',sans-serif;
+    line-height: 60px;
+}
+
+.left img {
+    height: 40px;
+    align-self: center;
 }
 
 .menu-items {
     background-color: rgb(132, 0, 255);
     height: 100%;
-    width: 30px;}
+    width: fit-content;
+    
+}
 
 .sm-links {
     background-color: rgb(217, 255, 0);
     height: 100%;
-    width: 30px;}
+    width: 30px;
+padding-right: 60px;}
