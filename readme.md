@@ -25,3 +25,16 @@ I will be adding comments to some places in the code so I can reference back to 
 The nav bar is now complete. I have added a lot of comments to the code so that I can refer back to certain sections for future reference.
 
 I have structured it in such a way that I can use this for basic and generic websites in the future.
+
+--------------------------------------------------------
+
+2025/02/25 11:30am
+
+Started work on the hero portion of the webpage.
+
+Added some more default styling to the header.css file as the rest seems to have reset all the 
+default styling on the webpage.
+
+I then added some background images.
+
+I learnt that the calc function can be used to help with calculating where things should be.
