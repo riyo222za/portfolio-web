@@ -13,6 +13,12 @@ This allows the change in one place to change multiple variables around the code
 
 }
 
+/* To set the root font size for REM font sizing, set it to 62.5%, what this does is, it sets the font size to 10px, this then scales 16px to 10px. */
+/* Set the root font size below */
+html{
+    font-size: 62.5%;
+}
+
 /* Pre-loading in the color images for the hover effect this stops the initial stutter when you 
 hover over the actual links/images.
 This smooths out the hover effect of the images changing. */
@@ -30,6 +36,8 @@ body {
     
 }
 
+/* This allows you to create the wrapper tag in any class */
+
 .wrapper-main {
     width: 1000px;
     margin: 0 auto;
@@ -39,8 +47,8 @@ body {
 This adds a different cursor when you hover over any links on the website. */
 a {
     cursor: pointer;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.2;
     color: white;
     font-family: var(--site-font);
 }
@@ -48,8 +56,8 @@ a {
 /* Adding the default to other properties as the reset sheet has reset those */
 
 h1 {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 2.6rem;
+    line-height: 1.5;
     color: white;
     font-family: var(--site-font);
     font-weight: 600;
@@ -57,16 +65,16 @@ h1 {
 }
 
 p {
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 1.4rem;
+    line-height: 1.2;
     color: white;
     font-family: var(--site-font);
 
 }
 
 h2 {
-    font-size: 28px;
-    line-height: 31px;
+    font-size: 2.8rem;
+    line-height: 1.5;
     color: white;
     font-family: var(--site-font);
     font-weight: 600;
@@ -75,8 +83,8 @@ h2 {
 }
 
 h3 {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 1.2;
+    line-height: 1.2;
     color: white;
     font-family: var(--site-font);
     font-weight: 600;
@@ -235,9 +243,9 @@ Instead of adding the images in the HTML they were added so that we can assign a
 
 .footer-testemoni p{
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 20px 20px 0px;
-    line-height: 18px;
+    line-height: 1.5;
 
 }
 

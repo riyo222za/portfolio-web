@@ -23,18 +23,18 @@ main {
 
 main .main-intro h1 {
 
-    font-size: 96px;
-    line-height: 106px;
+    font-size: 9.6rem;
+    line-height: 1.1;
 }
 
 main p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.8rem;
+    line-height: 1.75;
 }
 
 main a {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 1.7rem;
     display: block;
     background-color: white;
     padding: 10px 20px;
@@ -51,7 +51,7 @@ main a:hover{
 }
 
 main .main-quotes h2{
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     padding: 10px;
     line-height: 30px;
@@ -103,7 +103,7 @@ main .main-intro {
     text-align: center;
     padding: 40px;
     flex-basis: 100%;
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .index-category-box {
@@ -180,8 +180,8 @@ main .main-intro {
 /* Ending dark hover effect */
 
 .index-category-box h3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 1.75;
     color: black;
     /* How to create text shadow */
     text-shadow: -2px 2px 4px #000;
@@ -221,7 +221,7 @@ main .main-intro {
 }
 
 .index-about-text a {
-    font-size: 18px;
+    font-size: 1.8rem;
     display: block;
     background-color: white;
     padding: 10px 20px;
