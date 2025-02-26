@@ -1,4 +1,4 @@
-/* This will refer to the rest of the HTML sheet after the header.css   */
+/* This will refer to the rest of the HTML sheet after the main.css, it is controlling the CSS styling after the header and before the footer.   */
 
 
 main {
@@ -12,6 +12,7 @@ main {
     /* for the background image, there is a hierarchy, so put them in stack order of what should be in front vs behind */
     background-image: url(../img/me.png), url(../img/bg.png);
     /* VH is good because it actually adjusts the size of the image based on device size */
+    /* If you look below in the background-image properties, you will see a comma, this is independently controlling the different images as seen above. */
     background-size: 60vh, cover;
     background-repeat: no-repeat;
     background-position: bottom, center;
