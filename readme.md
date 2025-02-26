@@ -142,6 +142,8 @@ Important tips you can use on any website:
                         }
 
                  }
+        
+        - You can actually choose to remove content based on the mobile device.
 
 
 ----------------------------------------------------

@@ -15,10 +15,11 @@ main {
     /* If you look below in the background-image properties, you will see a comma, this is independently controlling the different images as seen above. */
     background-size: 60vh, cover;
     background-repeat: no-repeat;
-    background-position: bottom, center;
+    background-position: bottom left calc(50% + 0px), center;
     display: flex;
     justify-content: center;
     align-items: center ;
+    column-gap: 100px;
 }
 
 main .main-intro h1 {
@@ -30,6 +31,7 @@ main .main-intro h1 {
 main p {
     font-size: 1.8rem;
     line-height: 1.75;
+    max-width: 500px;
 }
 
 main a {
@@ -75,13 +77,11 @@ main .main-quotes p:nth-child(3){
 }
 
 main .main-quotes {
-    position: relative;
-    left: 4vh;
+    padding-bottom: 8vh;
 }
 
 main .main-intro {
-    position: relative;
-    right: 10vh;
+    padding-bottom: 8vh;
 
 }
 
@@ -202,7 +202,7 @@ main .main-intro {
     column-gap: 60px; 
 }
 
-.index-about-img {
+.index-about-img img{
     width: 300px;
     height: 300px;
     border-radius: 300px;
@@ -276,3 +276,97 @@ main .main-intro {
 }
 
 /* About ends here */
+
+/* Mobile device responsive layout starts here. */
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        align-items: flex-end ;
+    }
+
+    main .main-intro {
+        padding-bottom: 8vh;
+    }
+    
+    main .main-intro h1 {
+    
+        font-size: 5rem;
+        line-height: 1.1;
+        text-align: center;
+    }
+    
+    main p {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    main a {
+       margin: 30px auto;
+    }
+    
+
+    main .main-quotes {
+        display: none;
+    }
+
+    .index-category {
+
+        padding: 40px 0 20px;
+
+        row-gap: 20px;
+
+    }
+    
+    .index-category p {
+
+        padding: 20px;
+
+    }
+    
+    .index-category-box {
+        width: calc(100%-10%);
+        height: 160px;
+
+    }
+    
+    .index-about {
+        width: 100%;
+        padding: 60px 0;
+       
+    }
+    .index-about-flex {
+        flex-wrap: wrap;
+
+        row-gap: 20px; 
+    }
+    
+    .index-about-img {
+        width: 60%;
+
+    }
+
+    .index-about-img img{
+        width: 100%;
+
+    }
+    
+    .index-about-text {
+        flex-basis: 100%;
+    }
+    
+    .index-about-text h2 {
+        text-align: center;
+    }
+    
+    .index-about-text p {
+        text-align: center;
+    }
+    
+    .index-about-text a {
+        margin: 0 auto;
+    }
+   
+}
