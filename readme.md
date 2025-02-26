@@ -228,3 +228,17 @@ Finished the footer and sitemap of the website.
 2025/02/26 09:54am
 
 Shifted the website away from px for font size and moved over to REM measurement and unit-less line height.
+
+-----------------------------------------------------------------------
+
+2025/02/26 12:50am
+
+I have now made the website mobile friendly. 
+
+I learnt how to actually use the @media query functions which was really interesting.
+
+I will no add a burger menu using JS but I have not full delved into JS yet.
+
+-----------------------------------------------------------------------
+
+2025/02/26 
