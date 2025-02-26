@@ -22,6 +22,9 @@ Important tips you can use on any website:
                set font size in elements to 1.6rem which equals 16px
                then line height rule of thumb is 1.75
         - You can also use rem to scale height and width for box sizing, if there is text in the box.
+    -Create the wrapper-main div class and then put the rest of your content into there.
+        - It creates the overall alignment for your website.
+        - You then just need to add the css styling in the main.css file once.
 
 ----------------------------------------------------
 
