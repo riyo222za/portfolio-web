@@ -11,6 +11,16 @@ Important tips you can use on any website:
           You will also create the styling for the header and footer here, as you can then use these across the pages.
     - Create a {insert page name}.css style sheet to control those elements of the content other than the header and footer here.
         - we can can then style those elements independently to the header and footer.
+    - The :root and html tag in the main.css file creates a root styling which will then be applied to all the other style sheets.
+        - In the reset.css style sheet the default font becomes 16px, then inside of the actual root set the font size to 62.5%,
+          this then makes the font size 10px.
+        - This allows the rem font measurement to be easy to use as it is 1.6 * 10px = 16px.
+        - When you use rem you can use unit-less line height. Google the rule of thumb measurements for the line height based on what value rem you used.
+          e.g. default font = 16px
+               In the root you set font-size to 62.5%
+               Font now becomes 10px
+               set font size in elements to 1.6rem which equals 16px
+               then line height rule of thumb is 1.75
 
 ----------------------------------------------------
 
@@ -88,3 +98,9 @@ Only cool thing of note here was creating "skill bars"
 2025/02/25 21:56pm
 
 Finished the footer and sitemap of the website.
+
+-----------------------------------------------------------------------
+
+2025/02/26 09:54am
+
+Shifted the website away from px for font size and moved over to REM measurement and unit-less line height.
