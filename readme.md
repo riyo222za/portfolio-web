@@ -25,6 +25,124 @@ Important tips you can use on any website:
     -Create the wrapper-main div class and then put the rest of your content into there.
         - It creates the overall alignment for your website.
         - You then just need to add the css styling in the main.css file once.
+    - For mobile devices:
+        - The wrapper main should not have a fixed with instead set it to 100%
+        - You then set a new CSS styling property where you can dynamically swap things around:
+            - You have to create a media query.
+            - You have to have the meta tag in the html file with the viewport.
+            - You must have wrapper-main div in your HTML and CSS main
+            - The below is assuming you started working on desktop first then worked on mobile optimization.
+            - The "only screen and" portion is a safety setting to have.
+            - @media only screen and (max-width: 600px){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 601px){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 768px){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 992px){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 1200px){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+            All of the above are the major break points, just see if you have a 1000px then you dont need to add the 1200px. 
+            These above are rule of thumbs.
+
+            The below can also be set if the user switches to landscape mode and you can style based on portrait also seperately.
+
+            @media only screen and (max-width: 600px) and (orientation: landscape){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+            @media only screen and (max-width: 600px) and (orientation: portrait){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 601px) and (orientation: landscape){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 768px) and (orientation: landscape){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 992px) and (orientation: landscape){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 1200px) and (orientation: landscape){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+            
+            You could remove all of those and write it simply like. you must have the first max width.
+
+              @media only screen and (max-width: 600px){
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
+              @media only screen and (min-width: 601) and (max-width: 768) {
+                .wrapper-main {
+                        width: 100%;
+                        
+                        }
+
+                 }
+
 
 ----------------------------------------------------
 
