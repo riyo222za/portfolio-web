@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper-main {
+    width: 900px;
+    margin: 0 auto;
+}
+
+textarea, 
+input {
+
+    border: 1px solid #ccc;
+}
+
+textarea:focus, 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus
+ {
+
+    outline: 1px solid blue;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize: horizontal;
+}
+
+input[type="radio"] {
+    appearance: radio;
+}
+
+input[type="checkbox"] {
+    appearance: checkbox;
+}
+
+select {
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+button {
+    background-color: bisque;
+    border: 1px solid #ccc;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+textarea, 
+select, 
+button {
+    padding: 10px;
+}

@@ -241,4 +241,8 @@ I will no add a burger menu using JS but I have not full delved into JS yet.
 
 -----------------------------------------------------------------------
 
-2025/02/26 
+2025/02/26 13:49pm
+
+Added the favicon into the website.
+
+---------------------------------------------------------------------------

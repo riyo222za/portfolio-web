@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+    <link rel="stylesheet"  href="css/reset.css">
+    <link rel="stylesheet"  href="css/form.css">
+</head>
+<body>
+
+    <!-- Form starts here -->
+    <section class="wrapper-main form-main">
+        <form action="example.html" method="get">
+            <label for="em">Email</label>
+            <br>
+            <input required type="email" id="em" name="em" placeholder="Email">
+            <br>
+            <br>
+            <label for="pwd">Password</label>
+            <br>
+            <input required type="password" id="pwd" name="pwd" placeholder="Password">
+            <br>
+            <br>
+            <label for="firstname">First Name</label>
+            <br>
+            <!-- the required tag below makes it a mandatory field, however you make it secure in backend code, just use it to show its required. -->
+            <input required type="text" id="firstname" name="firstname" placeholder="Enter your First name" value="">
+            <br>
+            <br>
+            <label for="message">Write your message</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label>Pick your eye color</label>
+            <br>
+            <input type="radio" id="eyecolorblue" name="eyecolor" value="blue">
+            <label for="eyecolorblue">blue</label>
+            <input type="radio" id="eyecolorgreen" name="eyecolor" value="green">
+            <label for="eyecolorgreen">green</label>
+            <input type="radio" id="eyecolorbrown" name="eyecolor" value="brown">
+            <label for="eyecolorbrown">brown</label>
+            <br>
+            <br>
+            <label>What pet do you have</label>
+            <br>
+            <input type="checkbox" id="petcat" name="petcat" value="cat">
+            <label for="petcat">petcat</label>
+            <input type="checkbox" id="petdog" name="petdog" value="dog">
+            <label for="petdog">petdog</label>
+            <input type="checkbox" id="petbird" name="petbird" value="bird">
+            <label for="petbird">petbird</label>
+            <br>
+            <br>
+            <label>What car do you drive</label>
+            <br>
+            <select name="cartype" id="cartype">
+                <option value="none">none</option>
+                <option value="suv">suv</option>
+                <option value="sedan">sedan</option>
+                <option value="bakkie">bakkie</option>
+            </select>
+            <br>
+            <br>
+            <!-- <input type="submit"> -->
+            <button type="submit" value="submit">Submit</button>
+            
+        </form>
+    </section>
+    <!-- Form starts here -->
+    
+</body>
+</html>
