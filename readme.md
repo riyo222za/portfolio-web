@@ -246,3 +246,7 @@ I will no add a burger menu using JS but I have not full delved into JS yet.
 Added the favicon into the website.
 
 ---------------------------------------------------------------------------
+
+2025/02/26 15:10pm
+
+learnt how to create a basic web form, does not have any logicc behind it but is a template which will be added to the site soon.
