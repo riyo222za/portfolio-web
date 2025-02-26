@@ -1,9 +1,25 @@
+Important tips you can use on any website:
+
+    - Use a CSS reset stylesheet.
+        - When you do this, it resets the styling of all properties!
+            This means things like h1's, h2's, links, lists, buttons. EVERYTHING will look the same.
+            The font size, weight, borders, background colors will all be exactly the same and will display nothing fancy.
+            So you need to create a root styling for all of these.
+    - Have a main.css stylesheet which can be shared across all the pages of the website.
+        - What you will do with this is essentially control the overall styling defaults.
+          Like the h1,h2, lists, links, buttons styling for the whole page from here.
+          You will also create the styling for the header and footer here, as you can then use these across the pages.
+    - Create a {insert page name}.css style sheet to control those elements of the content other than the header and footer here.
+        - we can can then style those elements independently to the header and footer.
+
+----------------------------------------------------
+
 2025/02/25
 
 This is going to be a build of my first portfolio website.
 I will be starting with creating the nav bar and styling it using CSS basics.
 
-    - Some concepts I will be applying here will be the use of flexbox and some image transitions.
+    - Some concepts I will be applying here will be the use of flex-box and some image transitions.
     - I intend to have some social media links in the nav bar along with an AI generated image of a company logo that I designed.
     - the use of the VAR function in HTML.
     - Pre loading images into the file to make the transition a bit smoother.
