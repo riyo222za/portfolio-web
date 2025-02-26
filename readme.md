@@ -21,6 +21,7 @@ Important tips you can use on any website:
                Font now becomes 10px
                set font size in elements to 1.6rem which equals 16px
                then line height rule of thumb is 1.75
+        - You can also use rem to scale height and width for box sizing, if there is text in the box.
 
 ----------------------------------------------------
 
