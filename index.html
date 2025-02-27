@@ -1,222 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riyaad Mohamed Portfolio</title>
     <!-- This is how to add a favicon, go to favicon.cc to generate one -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
     <!-- Added the Font api from google here for Roboto, you HAVE to add this before the CSS stylesheet links. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Becareful as the stylesheet order does matter, keep it in order as to how the website is styled. -->
-    <link rel="stylesheet"  href="css/reset.css">
-    <link rel="stylesheet"  href="css/main.css">
-    <link rel="stylesheet"  href="css/index.css">
-</head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Burger menu starts here -->
     <nav class="burger-menu">
-        <ul>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./log.html">Log</a></li>
+        <li><a href="./about.html">About me</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Burger menu ends here -->
+
+    <!-- start of the header (top) -->
+    <header class="header-main">
+      <div class="left">
+        <img src="img/lud.png" alt="Level Up Design Logo" />
+        <!-- Added the nav tag so that it distinguishes where the menu items will actually be. -->
+        <nav class="menu-items">
+          <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="./log.html">Log</a></li>
             <li><a href="./about.html">About me</a></li>
             <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+          </ul>
+        </nav>
+      </div>
 
-<!-- Burger menu ends here -->
-
-    <!-- start of the header (top) -->
-    <header class="header-main">
-        <div class="left">
-            <img src="img/lud.png" alt="Level Up Design Logo">
-                <!-- Added the nav tag so that it distinguishes where the menu items will actually be. -->
-            <nav class="menu-items">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./log.html">Log</a></li>
-                    <li><a href="./about.html">About me</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    
-            <!-- The images are linked in the main.css file.
+      <!-- The images are linked in the main.css file.
              This was done to instead a property and styling to the links
              instead of a picture then links attached to that. -->
-        <div class="sm-links">
-            <a href="https://github.com/riyo222za" target="_blank"><div class="sm-links-gh"></div></a>
-            <a href="https://www.linkedin.com/in/riyaad-mohamed-b8ba65198" target="_blank"><div class="sm-links-ln"></div></a>
-            <a href="https://www.instagram.com/" target="_blank"><div class="sm-links-in"></div></a>
+      <div class="sm-links">
+        <a href="https://github.com/riyo222za" target="_blank"
+          ><div class="sm-links-gh"></div
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/riyaad-mohamed-b8ba65198"
+          target="_blank"
+          ><div class="sm-links-ln"></div
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><div class="sm-links-in"></div
+        ></a>
 
-            <!-- For the burger menu button -->
+        <!-- For the burger menu button -->
 
-            <div class="burger-menu-btn"></div>
+        <div class="burger-menu-btn"></div>
+      </div>
 
-        </div>
-
-        <!-- This is where the NAV bar ends. You can use the above to create a basic websites nav bar in the future. -->
+      <!-- This is where the NAV bar ends. You can use the above to create a basic websites nav bar in the future. -->
     </header>
-
 
     <!-- This is where the hero section begins -->
     <main>
-    <!-- You can only have one main tag per page, so use this for the hero as an example. -->
-        <div class="main-intro">
-            <h1>Welcome<br>to my <br>portfolio</h1>
-            <p>This is where you will be able to actually see some of my work as well as get hold of me. You can find links to my professional social media profiles. Find out more information about me, and even contact me.If you really want to follow on you can go to the log page to follow how I made this page.</p>
-            <a href="./portfolio.html">My Portfolio</a>
-        </div>
-        <div class="main-quotes">
-            <h2>Here are some quotes I live by</h2>
-            <p>"this is a very inspirational quote place holder number 1"<br><br>-Riyaad Mohamed</p>
-            <p>"this is a very inspirational quote place holder number 2"<br><br>-Riyaad Mohamed</p>
-        </div>
-
+      <!-- You can only have one main tag per page, so use this for the hero as an example. -->
+      <div class="main-intro">
+        <h1>Welcome<br />to my <br />portfolio</h1>
+        <p>
+          This is where you will be able to actually see some of my work as well
+          as get hold of me. You can find links to my professional social media
+          profiles. Find out more information about me, and even contact me.If
+          you really want to follow on you can go to the log page to follow how
+          I made this page.
+        </p>
+        <a href="./portfolio.html">My Portfolio</a>
+      </div>
+      <div class="main-quotes">
+        <h2>Here are some quotes I live by</h2>
+        <p>
+          "this is a very inspirational quote place holder number 1"<br /><br />-Riyaad
+          Mohamed
+        </p>
+        <p>
+          "this is a very inspirational quote place holder number 2"<br /><br />-Riyaad
+          Mohamed
+        </p>
+      </div>
     </main>
     <!-- This is where the hero section ends -->
 
     <!-- This is where the category section of the website will begin -->
     <section class="index-category">
-        <p>Categories</p>
-            <a href="#" class="index-category-box">
-                <div class="dark-overlay"></div> <!-- This is important for the dark hover effect -->
-                <h3>Web Development</h3>
-            </a>
-            <a href="./portfolio.html" class="index-category-box">
-                <div class="dark-overlay"></div>
-                <h3>Portfolio</h3>
-            </a>
-            <a href="#" class="index-category-box">
-                <div class="dark-overlay"></div>
-                <h3>Tax services</h3>
-            </a>
-            <a href="#" class="index-category-box">
-                <div class="dark-overlay"></div>
-                <h3>Accounting services</h3>
-            </a>
+      <p>Categories</p>
+      <a href="#" class="index-category-box">
+        <div class="dark-overlay"></div>
+        <!-- This is important for the dark hover effect -->
+        <h3>Web Development</h3>
+      </a>
+      <a href="./portfolio.html" class="index-category-box">
+        <div class="dark-overlay"></div>
+        <h3>Portfolio</h3>
+      </a>
+      <a href="#" class="index-category-box">
+        <div class="dark-overlay"></div>
+        <h3>Tax services</h3>
+      </a>
+      <a href="#" class="index-category-box">
+        <div class="dark-overlay"></div>
+        <h3>Accounting services</h3>
+      </a>
     </section>
     <!-- The Category section ends here -->
 
     <!-- This is where the ABOUT section of the website will begin -->
 
     <section class="index-about">
-        <div class="wrapper-main index-about-flex">
-            <div class="index-about-img">
-                <img src="img/lud.png" alt="placeholder for image">
-            </div>
-            <div class="index-about-text">
-                <h2 >A bit about me</h2>
-                <p>This is where you will be able to actually see some of my work as well as get hold of me.<br>You can find links to my professional social media profiles.<br>Find out more information about me, and even contact me.<br>If you really want to follow on you can go to the log page<br>to follow how I made this page.</p>
-                <a href="./about.html">About me</a>
-            </div>
-            <div class="index-about-skill">
-                <p>HTML & CSS</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-filling htmlcss"></div>
-                </div>
-                <div class="index-about-skill">
-                    <p>Web Design</p>
-                    <div class="index-about-skill-bar">
-                        <div class="index-about-skill-bar-filling web"></div>
-                    </div>
-                </div>
-                <div class="index-about-skill">
-                    <p>Javascript</p>
-                    <div class="index-about-skill-bar">
-                        <div class="index-about-skill-bar-filling js"></div>
-                    </div>
-                </div>
-                <div class="index-about-skill">
-                    <p>Accounting</p>
-                    <div class="index-about-skill-bar">
-                        <div class="index-about-skill-bar-filling acc"></div>
-                    </div>
-                </div>
-                <div class="index-about-skill">
-                    <p>Client Skills</p>
-                    <div class="index-about-skill-bar">
-                        <div class="index-about-skill-bar-filling cs"></div>
-                    </div>
-                </div>
-                <div class="index-about-skill">
-                    <p>Tax</p>
-                    <div class="index-about-skill-bar">
-                        <div class="index-about-skill-bar-filling tax"></div>
-                    </div>
-            </div>
+      <div class="wrapper-main index-about-flex">
+        <div class="index-about-img">
+          <img src="img/lud.png" alt="placeholder for image" />
         </div>
-
+        <div class="index-about-text">
+          <h2>A bit about me</h2>
+          <p>
+            This is where you will be able to actually see some of my work as
+            well as get hold of me.<br />You can find links to my professional
+            social media profiles.<br />Find out more information about me, and
+            even contact me.<br />If you really want to follow on you can go to
+            the log page<br />to follow how I made this page.
+          </p>
+          <a href="./about.html">About me</a>
         </div>
-    
+        <div class="index-about-skill">
+          <p>HTML & CSS</p>
+          <div class="index-about-skill-bar">
+            <div class="index-about-skill-bar-filling htmlcss"></div>
+          </div>
+          <div class="index-about-skill">
+            <p>Web Design</p>
+            <div class="index-about-skill-bar">
+              <div class="index-about-skill-bar-filling web"></div>
+            </div>
+          </div>
+          <div class="index-about-skill">
+            <p>Javascript</p>
+            <div class="index-about-skill-bar">
+              <div class="index-about-skill-bar-filling js"></div>
+            </div>
+          </div>
+          <div class="index-about-skill">
+            <p>Accounting</p>
+            <div class="index-about-skill-bar">
+              <div class="index-about-skill-bar-filling acc"></div>
+            </div>
+          </div>
+          <div class="index-about-skill">
+            <p>Client Skills</p>
+            <div class="index-about-skill-bar">
+              <div class="index-about-skill-bar-filling cs"></div>
+            </div>
+          </div>
+          <div class="index-about-skill">
+            <p>Tax</p>
+            <div class="index-about-skill-bar">
+              <div class="index-about-skill-bar-filling tax"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-<!-- About section ends here -->
+    <!-- About section ends here -->
 
-<!-- Footer starts here -->
+    <!-- Footer starts here -->
 
     <footer class="footer-main">
-    <div class="wrapper-main footer-main-flex">
+      <div class="wrapper-main footer-main-flex">
+        <div class="footer-testemoni">
+          <img src="./img/test/programmer.png" alt="self motivated" />
+          <p>
+            I would like to think I am a self motivator, due to the fact that I
+            am pursuing this career path on a self learning journey.
+          </p>
+        </div>
+        <div class="footer-testemoni">
+          <img src="./img/test/author.png" alt="creative" />
+          <p>
+            I would like to think I am a self motivator, due to the fact that I
+            am pursuing this career path on a self learning journey.
+          </p>
+        </div>
+        <div class="footer-testemoni">
+          <img src="./img/test/lecturer.png" alt="goal oriented" />
+          <p>
+            I would like to think I am a self motivator, due to the fact that I
+            am pursuing this career path on a self learning journey.
+          </p>
+        </div>
+        <div class="footer-testemoni">
+          <img src="./img/test/creator.png" alt="creative" />
+          <p>
+            I would like to think I am a self motivator, due to the fact that I
+            am pursuing this career path on a self learning journey.
+          </p>
+        </div>
+        <div class="footer-testemoni">
+          <img src="./img/test/officer.png" alt="honest" />
+          <p>
+            I would like to think I am a self motivator, due to the fact that I
+            am pursuing this career path on a self learning journey.
+          </p>
+        </div>
 
-        <div class="footer-testemoni">
-            <img src="./img/test/programmer.png" alt="self motivated">
-            <p>I would like to think I am a self motivator, due to the fact that I am pursuing this career path on a self learning journey.</p>
-        </div>
-        <div class="footer-testemoni">
-            <img src="./img/test/author.png" alt="creative">
-            <p>I would like to think I am a self motivator, due to the fact that I am pursuing this career path on a self learning journey.</p>
-        </div>
-        <div class="footer-testemoni">
-            <img src="./img/test/lecturer.png" alt="goal oriented">
-            <p>I would like to think I am a self motivator, due to the fact that I am pursuing this career path on a self learning journey.</p>
-        </div>
-        <div class="footer-testemoni">
-            <img src="./img/test/creator.png" alt="creative">
-            <p>I would like to think I am a self motivator, due to the fact that I am pursuing this career path on a self learning journey.</p>
-        </div>
-        <div class="footer-testemoni">
-            <img src="./img/test/officer.png" alt="honest">
-            <p>I would like to think I am a self motivator, due to the fact that I am pursuing this career path on a self learning journey.</p>
-        </div>
-
-        <a class="footer-getintouch" href="./contact.html">GET IN TOUCH WITH ME</a>
+        <a class="footer-getintouch" href="./contact.html"
+          >GET IN TOUCH WITH ME</a
+        >
 
         <div class="footer-sitemap">
-            <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="./log.html">LOG</a></li>
-                <li><a href="./about.html">ABOUT ME</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Web Development</a></li>
-                <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="#">TAX SERVICES</a></li>
-                <li><a href="#">ACCOUNTING SERVICES</a></li>
-            </ul>
-            <ul>
-                <li><p>If you want to get in touch with me, please send me an email or call, and we can set up a meeting.</p></li>
-            </ul>
-            <ul>
-                <li><p>GET IN TOUCH</p></li>
-                <li><p>+27 072 905 0919</p></li>
-                <li><p>RIYO.RIYAAD@GMAIL.COM</p></li>
-                <li><p>JOHANNESBURG, GAUTENG</p></li>
-            </ul>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./portfolio.html">PORTFOLIO</a></li>
+            <li><a href="./log.html">LOG</a></li>
+            <li><a href="./about.html">ABOUT ME</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="./portfolio.html">PORTFOLIO</a></li>
+            <li><a href="#">TAX SERVICES</a></li>
+            <li><a href="#">ACCOUNTING SERVICES</a></li>
+          </ul>
+          <ul>
+            <li>
+              <p>
+                If you want to get in touch with me, please send me an email or
+                call, and we can set up a meeting.
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li><p>GET IN TOUCH</p></li>
+            <li><p>+27 072 905 0919</p></li>
+            <li><p>RIYO.RIYAAD@GMAIL.COM</p></li>
+            <li><p>JOHANNESBURG, GAUTENG</p></li>
+          </ul>
         </div>
-    </div>
+      </div>
     </footer>
 
-<!-- insert javascript runs the burger menu-->
+    <!-- insert javascript runs the burger menu-->
 
-<script src="./js/main.js"></script>
-
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>

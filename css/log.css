@@ -1,42 +1,38 @@
 /* This will refer to the rest of the HTML sheet after the header.css stylesheet */
 
-
 main {
-    width: 100%;
-    /* This calc function helps to move the rest of the website below the sticky header, 
+  width: 100%;
+  /* This calc function helps to move the rest of the website below the sticky header, 
     the header is 60px high and it cutsoff the next section, 
     so we use the calc to essentially push the rest of the website slightly 
     down so the top is not hidden by the website header which is locked to the top */
-    height: calc(100vh - 60px);
-    margin-top: 60px;
-    /* for the background image, there is a hierarchy, so put them in stackable order of what should be in front vs behind */
-    background-image: url(../img/bg.png);
-    /* VH is good because it actually adjusts the size of the image based on device size */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-   
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  /* for the background image, there is a hierarchy, so put them in stackable order of what should be in front vs behind */
+  background-image: url(../img/bg.png);
+  /* VH is good because it actually adjusts the size of the image based on device size */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-intro {
-    justify-items: center;
+  justify-items: center;
 }
 
 main .main-intro h1 {
-
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
 }
 
 main p {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
 }
 
 /* .main-intro a{
@@ -44,23 +40,18 @@ main p {
     text-align: center;
 } */
 
-main .GHL{
-    width: 50px;
-    height: 50px;
-    background-image: url(../img/github-color.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-   
+main .GHL {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/github-color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-main .LNL{
-    background-image: url(../img/linkedin-color.png);
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+main .LNL {
+  background-image: url(../img/linkedin-color.png);
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
-

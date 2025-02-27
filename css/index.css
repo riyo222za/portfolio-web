@@ -1,278 +1,271 @@
 /* This will refer to the rest of the HTML sheet after the main.css, it is controlling the CSS styling after the header and before the footer.   */
 
-
 main {
-    width: 100%;
-    /* This calc function helps to move the rest of the website below the sticky header, 
+  width: 100%;
+  /* This calc function helps to move the rest of the website below the sticky header, 
     the header is 60px high and it cuts-off the next section, 
     so we use the calc to essentially push the rest of the website slightly 
     down so the top is not hidden by the website header which is locked to the top */
-    height: calc(100vh - 60px);
-    margin-top: 60px;
-    /* for the background image, there is a hierarchy, so put them in stack order of what should be in front vs behind */
-    background-image: url(../img/me.png), url(../img/bg.png);
-    /* VH is good because it actually adjusts the size of the image based on device size */
-    /* If you look below in the background-image properties, you will see a comma, this is independently controlling the different images as seen above. */
-    background-size: 60vh, cover;
-    background-repeat: no-repeat;
-    background-position: bottom left calc(50% + 0px), center;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    column-gap: 100px;
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  /* for the background image, there is a hierarchy, so put them in stack order of what should be in front vs behind */
+  background-image: url(../img/me.png), url(../img/bg.png);
+  /* VH is good because it actually adjusts the size of the image based on device size */
+  /* If you look below in the background-image properties, you will see a comma, this is independently controlling the different images as seen above. */
+  background-size: 60vh, cover;
+  background-repeat: no-repeat;
+  background-position: bottom left calc(50% + 0px), center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
 }
 
 main .main-intro h1 {
-
-    font-size: 9.6rem;
-    line-height: 1.1;
+  font-size: 9.6rem;
+  line-height: 1.1;
 }
 
 main p {
-    font-size: 1.8rem;
-    line-height: 1.75;
-    max-width: 500px;
+  font-size: 1.8rem;
+  line-height: 1.75;
+  max-width: 500px;
 }
 
 main a {
-    margin-top: 20px;
-    font-size: 1.7rem;
-    display: block;
-    background-color: white;
-    padding: 10px 20px;
-    width: fit-content;
-    border-radius: 27px;
-    color: #1e1e1e;
+  margin-top: 20px;
+  font-size: 1.7rem;
+  display: block;
+  background-color: white;
+  padding: 10px 20px;
+  width: fit-content;
+  border-radius: 27px;
+  color: #1e1e1e;
 }
 
-main a:hover{
-    
-    background-color: var(--site-color-1-hover);
-    color: white;
-    
+main a:hover {
+  background-color: var(--site-color-1-hover);
+  color: white;
 }
 
-main .main-quotes h2{
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 10px;
-    line-height: 30px;
-    /* border-left: solid; */
-    border-color: white;
-    padding-left: 10px;
-    text-decoration: underline;
+main .main-quotes h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 10px;
+  line-height: 30px;
+  /* border-left: solid; */
+  border-color: white;
+  padding-left: 10px;
+  text-decoration: underline;
 }
 
-main .main-quotes p{
-    border-left: solid;
-    border-color: white;
-    padding-left: 10px;
-    margin: 40px 0;
+main .main-quotes p {
+  border-left: solid;
+  border-color: white;
+  padding-left: 10px;
+  margin: 40px 0;
 }
 
 /* You can use the nth child pseudo class to target the 2nd etc of a specified container */
 
-main .main-quotes p:nth-child(3){
-   margin-left: 100px;
+main .main-quotes p:nth-child(3) {
+  margin-left: 100px;
 }
 
 main .main-quotes {
-    padding-bottom: 8vh;
+  padding-bottom: 8vh;
 }
 
 main .main-intro {
-    padding-bottom: 8vh;
-
+  padding-bottom: 8vh;
 }
 
 /* Category Styling */
 
 .index-category {
-    width: 100%;
-    padding: 60px 0;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
-    flex-wrap: wrap;
-    text-transform: uppercase;
+  width: 100%;
+  padding: 60px 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  text-transform: uppercase;
 }
 
 .index-category p {
-    color: black;
-    text-align: center;
-    padding: 40px;
-    flex-basis: 100%;
-    font-size: 3rem;
+  color: black;
+  text-align: center;
+  padding: 40px;
+  flex-basis: 100%;
+  font-size: 3rem;
 }
 
 .index-category-box {
-    width: 250px;
-    height: 250px;
-    background-color: rgb(0, 0, 0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /*This adds the dark hover effect*/
+  width: 250px;
+  height: 250px;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /*This adds the dark hover effect*/
 }
 
 /* the reason we are starting at 2 here is because the paragraph counts as a child so it is one */
 
 .index-category-box:nth-child(2) {
-    background-image: url(../img/web.png);
-    border: 2px black;
-    border-style: solid;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+  background-image: url(../img/web.png);
+  border: 2px black;
+  border-style: solid;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .index-category-box:nth-child(3) {
-    background-image: url(../img/tax.png);
-    border: 2px black;
-    border-style: solid;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+  background-image: url(../img/tax.png);
+  border: 2px black;
+  border-style: solid;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .index-category-box:nth-child(3):hover {
-    background-image: url(../img/calculator-8495_256.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img/calculator-8495_256.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .index-category-box:nth-child(4) {
-    background-image: url(../img/tax.png);
-    border: 2px black;
-    border-style: solid;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+  background-image: url(../img/tax.png);
+  border: 2px black;
+  border-style: solid;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .index-category-box:nth-child(5) {
-    background-image: url(../img/cons.png);
-    border: 2px black;
-    border-style: solid;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+  background-image: url(../img/cons.png);
+  border: 2px black;
+  border-style: solid;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 /* How to add dark hover in effect */
 
-.dark-overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    opacity: 0.5;
-    transition: all ease-in-out 200ms;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  transition: all ease-in-out 200ms;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .index-category-box:hover .dark-overlay {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Ending dark hover effect */
 
 .index-category-box h3 {
-    font-size: 2rem;
-    line-height: 1.75;
-    color: black;
-    /* How to create text shadow */
-    text-shadow: -2px 2px 4px #000;
-    z-index: 100; /*Also important for the dark hover effect*/
+  font-size: 2rem;
+  line-height: 1.75;
+  color: black;
+  /* How to create text shadow */
+  text-shadow: -2px 2px 4px #000;
+  z-index: 100; /*Also important for the dark hover effect*/
 }
 
 /* About styling begins here */
 
 .index-about {
-    width: 100%;
-    padding: 60px 0;
-   
+  width: 100%;
+  padding: 60px 0;
 }
 .index-about-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
 }
 
-.index-about-img img{
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
+.index-about-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
 }
 
 .index-about-text {
-    flex-basis: 450px;
+  flex-basis: 450px;
 }
 
 .index-about-text h2 {
-    flex-basis: 450px;
+  flex-basis: 450px;
 }
 
 .index-about-text p {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .index-about-text a {
-    font-size: 1.8rem;
-    display: block;
-    background-color: white;
-    padding: 10px 20px;
-    width: fit-content;
-    border-radius: 27px;
-    color: #1e1e1e;
+  font-size: 1.8rem;
+  display: block;
+  background-color: white;
+  padding: 10px 20px;
+  width: fit-content;
+  border-radius: 27px;
+  color: #1e1e1e;
 }
 
-.index-about-text a:hover{
-    background-color: var(--site-color-1-hover);
-    color: white;
+.index-about-text a:hover {
+  background-color: var(--site-color-1-hover);
+  color: white;
 }
 
 .index-about-skill {
-    flex-basis: 350px;
+  flex-basis: 350px;
 }
 
-
 .index-about-skill-bar {
-    width: 100%;
-    height: 20px;
-    border: 4px solid black;
+  width: 100%;
+  height: 20px;
+  border: 4px solid black;
 }
 
 .index-about-skill-bar-filling {
-    height: 100%;
-    background-color: red;
+  height: 100%;
+  background-color: red;
 }
 
-.htmlcss{
-    width: 50%;
+.htmlcss {
+  width: 50%;
 }
 
-.web{
-    width: 40%;
+.web {
+  width: 40%;
 }
 
-.js{
-    width: 10%;
+.js {
+  width: 10%;
 }
 
-.acc{
-    width: 70%;
+.acc {
+  width: 70%;
 }
 
-.cs{
-    width: 90%;
+.cs {
+  width: 90%;
 }
 
-.tax{
-    width: 65%;
+.tax {
+  width: 65%;
 }
 
 /* About ends here */
@@ -280,93 +273,81 @@ main .main-intro {
 /* Mobile device responsive layout starts here. */
 
 @media only screen and (max-width: 600px) {
+  main {
+    align-items: flex-end;
+  }
 
-    main {
-        align-items: flex-end ;
-    }
+  main .main-intro {
+    padding-bottom: 8vh;
+  }
 
-    main .main-intro {
-        padding-bottom: 8vh;
-    }
-    
-    main .main-intro h1 {
-    
-        font-size: 5rem;
-        line-height: 1.1;
-        text-align: center;
-    }
-    
-    main p {
-        font-size: 1.6rem;
-        line-height: 1.25;
-        text-align: center;
-        padding: 0 20px;
-    }
-    
-    main a {
-       margin: 30px auto;
-    }
-    
+  main .main-intro h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    text-align: center;
+  }
 
-    main .main-quotes {
-        display: none;
-    }
+  main p {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    text-align: center;
+    padding: 0 20px;
+  }
 
-    .index-category {
+  main a {
+    margin: 30px auto;
+  }
 
-        padding: 40px 0 20px;
+  main .main-quotes {
+    display: none;
+  }
 
-        row-gap: 20px;
+  .index-category {
+    padding: 40px 0 20px;
 
-    }
-    
-    .index-category p {
+    row-gap: 20px;
+  }
 
-        padding: 20px;
+  .index-category p {
+    padding: 20px;
+  }
 
-    }
-    
-    .index-category-box {
-        width: calc(100%-10%);
-        height: 160px;
+  .index-category-box {
+    width: calc(100%-10%);
+    height: 160px;
+  }
 
-    }
-    
-    .index-about {
-        width: 100%;
-        padding: 60px 0;
-       
-    }
-    .index-about-flex {
-        flex-wrap: wrap;
+  .index-about {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .index-about-flex {
+    flex-wrap: wrap;
 
-        row-gap: 20px; 
-    }
-    
-    .index-about-img {
-        width: 60%;
+    row-gap: 20px;
+  }
 
-    }
+  .index-about-img {
+    width: 60%;
+  }
 
-    .index-about-img img{
-        width: 100%;
+  .index-about-img img {
+    width: 100%;
+  }
 
-    }
-    
-    .index-about-text {
-        flex-basis: 100%;
-    }
-    
-    .index-about-text h2 {
-        text-align: center;
-    }
-    
-    .index-about-text p {
-        text-align: center;
-    }
-    
-    .index-about-text a {
-        margin: 0 auto;
-    }
-   
+  .index-about-text {
+    flex-basis: 100%;
+  }
+
+  .index-about-text h2 {
+    text-align: center;
+  }
+
+  .index-about-text p {
+    text-align: center;
+  }
+
+  .index-about-text a {
+    margin: 0 auto;
+  }
 }

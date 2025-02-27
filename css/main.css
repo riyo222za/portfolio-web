@@ -2,458 +2,410 @@
 
 /* This will also create the default styling for most items in the webpage */
 
-
 /* Added the root where you can add variables to reference all over the place, by simply using the var() function. 
 This allows the change in one place to change multiple variables around the code.*/
 :root {
-    --head-foot: white;
-    --site-color-1: red;
-    --site-color-1-hover: rgb(168, 14, 14);
-    --site-font: 'Roboto','sans-serif'
-
+  --head-foot: white;
+  --site-color-1: red;
+  --site-color-1-hover: rgb(168, 14, 14);
+  --site-font: "Roboto", "sans-serif";
 }
 
 /* To set the root font size for REM font sizing, set it to 62.5%, what this does is, it sets the font size to 10px, this then scales 16px to 10px. */
 /* Set the root font size below */
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
 /* Pre-loading in the color images for the hover effect this stops the initial stutter when you 
 hover over the actual links/images.
 This smooths out the hover effect of the images changing. */
 body::after {
-    content: url(../img/instagram-color.png) url(../img/github-color.png) url(../img/linkedin-color.png) url(../img/me.png) url(../img/bg.png) url(../img/calculator-8495_256.gif);
-    position: absolute;
-    height: 0;
-    width: 0;
-    overflow: hidden;
-    z-index: -10;
+  content: url(../img/instagram-color.png) url(../img/github-color.png)
+    url(../img/linkedin-color.png) url(../img/me.png) url(../img/bg.png)
+    url(../img/calculator-8495_256.gif);
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  z-index: -10;
 }
 
 body {
-    background-color: #1e1e1e;
-    
+  background-color: #1e1e1e;
 }
 
 /* This allows you to create the wrapper tag in any class */
 
 .wrapper-main {
-    width: 1100px;
-    margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 /* Due to the reset.css style sheet it removes the cursor for links.
 This adds a different cursor when you hover over any links on the website. */
 a {
-    cursor: pointer;
-    font-size: 1.4rem;
-    line-height: 1.2;
-    color: white;
-    font-family: var(--site-font);
+  cursor: pointer;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: white;
+  font-family: var(--site-font);
 }
 
 /* Adding the default to other properties as the reset sheet has reset those */
 
 h1 {
-    font-size: 2.6rem;
-    line-height: 1.5;
-    color: white;
-    font-family: var(--site-font);
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: 2.6rem;
+  line-height: 1.5;
+  color: white;
+  font-family: var(--site-font);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 1.4rem;
-    line-height: 1.2;
-    color: white;
-    font-family: var(--site-font);
-
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: white;
+  font-family: var(--site-font);
 }
 
 h2 {
-    font-size: 2.8rem;
-    line-height: 1.5;
-    color: white;
-    font-family: var(--site-font);
-    font-weight: 600;
-    text-transform: uppercase;
-
+  font-size: 2.8rem;
+  line-height: 1.5;
+  color: white;
+  font-family: var(--site-font);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 h3 {
-    font-size: 1.2;
-    line-height: 1.2;
-    color: white;
-    font-family: var(--site-font);
-    font-weight: 600;
-    text-transform: uppercase;
-
+  font-size: 1.2;
+  line-height: 1.2;
+  color: white;
+  font-family: var(--site-font);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* Default styling ends here */
 
 header {
-    background-color: var(--head-foot); 
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* Adding the sticky website header */
-    position: fixed;
-    top: 0;
-    /* The z-index keeps on the front always */
-    z-index: 1000;
+  background-color: var(--head-foot);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* Adding the sticky website header */
+  position: fixed;
+  top: 0;
+  /* The z-index keeps on the front always */
+  z-index: 1000;
 }
 
-
 .left {
-    /* background-color: blue; */
-    height: 100%;
-    width: fit-content;
-    padding-left: 60px;
-    display: flex;
+  /* background-color: blue; */
+  height: 100%;
+  width: fit-content;
+  padding-left: 60px;
+  display: flex;
 }
 
 .left ul {
-    margin-left: 10px;
-   
+  margin-left: 10px;
 }
 
 /* the below allows you to shift the line items next to each other in the list */
 .left ul li {
-    display: inline;
-    float: left;
-   
+  display: inline;
+  float: left;
 }
 
 /* The below is changing the actual links it allows you  to select the link/click the button without being directly on the word but instead in its general vicinity. I have also added the height of it to stretch across the header which then lets you click anywhere within the header. 
 I have also added a default color for the text to be black so nothing overrides it */
 
 .left ul li a {
-    padding: 0 10px;
-    font-family: 'Roboto',sans-serif;
-    line-height: 60px;
-    color: black;
-    height: 100%;
-    display: block;
+  padding: 0 10px;
+  font-family: "Roboto", sans-serif;
+  line-height: 60px;
+  color: black;
+  height: 100%;
+  display: block;
 }
 
 /* The below adds a hover effect to the menu items/links, so that the color of the text changes to red depending on where you are hovering over. */
-.left ul li a:hover{
-   color: red;
+.left ul li a:hover {
+  color: red;
 }
 
 .left img {
-    height: 40px;
-    align-self: center;
+  height: 40px;
+  align-self: center;
 }
 
 .menu-items {
-    /* background-color: rgb(132, 0, 255); */
-    height: 100%;
-    width: fit-content;
-    
+  /* background-color: rgb(132, 0, 255); */
+  height: 100%;
+  width: fit-content;
 }
 
 .sm-links {
-    /* background-color: rgb(217, 255, 0); */
-    height: 100%;
-    width: fit-content;
-    padding-right: 60px;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+  /* background-color: rgb(217, 255, 0); */
+  height: 100%;
+  width: fit-content;
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 /* For the next 3 sections below. 
 Instead of adding the images in the HTML they were added so that we can assign a property to the link instead of making the link a picture.
  */
-.sm-links-gh{ 
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/github.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.sm-links-gh {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/github.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.sm-links-ln{ 
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/linkedin.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.sm-links-ln {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.sm-links-in{ 
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/instagram.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.sm-links-in {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/instagram.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Adding the hover effects for the images above */
 
-.sm-links-gh:hover{ 
-    
-    background-image: url(../img/github-color.png);
-    
+.sm-links-gh:hover {
+  background-image: url(../img/github-color.png);
 }
 
-.sm-links-ln:hover{ 
-    
-    background-image: url(../img/linkedin-color.png);
-    
+.sm-links-ln:hover {
+  background-image: url(../img/linkedin-color.png);
 }
 
-.sm-links-in:hover{ 
-    
-    background-image: url(../img/instagram-color.png);
-    
+.sm-links-in:hover {
+  background-image: url(../img/instagram-color.png);
 }
 
 /* FOOTER STARTS HERE */
 
 .footer-main {
-    width: 100%;
-    padding: 60px 0 100px;
-    background-color: #141414;
+  width: 100%;
+  padding: 60px 0 100px;
+  background-color: #141414;
 }
 
 .footer-main-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-testemoni {
-    flex-basis: 20%;
-    display: flex;
-    justify-content: center;    
-    flex-wrap: wrap;
-    
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-testemoni img {
-    width: 60%;
-    border-radius: 50px;
+  width: 60%;
+  border-radius: 50px;
 }
 
-.footer-testemoni p{
-    text-align: center;
-    font-size: 1.6rem;
-    padding: 20px 20px 0px;
-    line-height: 1.5;
-
+.footer-testemoni p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 20px 20px 0px;
+  line-height: 1.5;
 }
 
 .footer-getintouch {
-    margin: 40px 0 60px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    font-weight: 900px;
-    transition: all ease-in-out 200ms;
-   
+  margin: 40px 0 60px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  font-weight: 900px;
+  transition: all ease-in-out 200ms;
 }
 
 .footer-getintouch:hover {
-    border-color: red;
-    color: red;
+  border-color: red;
+  color: red;
 }
 
 .footer-sitemap {
-    flex-basis: 100%;
-    display: flex;
-
+  flex-basis: 100%;
+  display: flex;
 }
 
-.footer-sitemap a{
-    line-height: 30px;
+.footer-sitemap a {
+  line-height: 30px;
 }
 
-.footer-sitemap a:hover{
-    color: red;
+.footer-sitemap a:hover {
+  color: red;
 }
 
-
-.footer-sitemap ul:nth-child(1){
-    border-left: 2px solid red;
-    padding-left: 20px;
+.footer-sitemap ul:nth-child(1) {
+  border-left: 2px solid red;
+  padding-left: 20px;
 }
 
 .footer-sitemap ul:nth-child(1),
 .footer-sitemap ul:nth-child(2) {
-    flex-basis: 180px;
-
+  flex-basis: 180px;
 }
 
 .footer-sitemap ul:nth-child(3) {
-    flex-basis: 340px;
-
+  flex-basis: 340px;
 }
 
 .footer-sitemap p {
-   text-transform: uppercase;
-   line-height: 30px;
+  text-transform: uppercase;
+  line-height: 30px;
 }
 
 .footer-sitemap ul:nth-child(4) {
-    flex-grow: 1;
-    
+  flex-grow: 1;
 }
 
-.footer-sitemap ul:nth-child(4) li{
-    text-align: right;
-    
+.footer-sitemap ul:nth-child(4) li {
+  text-align: right;
 }
 
 /* BURGER MENU  */
 
 .burger-menu,
 .burger-menu-button {
-
-    display: none;
+  display: none;
 }
 
 /* Mobile device responsive layout starts here. */
 
 @media only screen and (max-width: 600px) {
-    
-    .burger-menu-btn {
-        display: block;
-        margin-left: 10px;
-        width: 50px;
-        height: 50px;
-        background-image: url(../img/burger-menu/burger-menu.png), url(../img/burger-menu/close.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center, center left 50px;
-    }
-    
-    .burger-menu {
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        z-index: 900;
-        background-color: #111;
-    }
+  .burger-menu-btn {
+    display: block;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/burger-menu/burger-menu.png),
+      url(../img/burger-menu/close.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center left 50px;
+  }
 
-    .burger-menu ul{
-        width: 100%;
-        height: calc(100vh - 60px);
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
+  .burger-menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 900;
+    background-color: #111;
+  }
 
-    }
+  .burger-menu ul {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
 
-    .burger-menu ul li{
-        flex-basis: 100%;
-        border-top: 2px solid black;
-        
-    }
+  .burger-menu ul li {
+    flex-basis: 100%;
+    border-top: 2px solid black;
+  }
 
-    .burger-menu ul li:last-child{
-        flex-basis: 100%;
-        border-bottom: 2px solid black;
-        
-    }
+  .burger-menu ul li:last-child {
+    flex-basis: 100%;
+    border-bottom: 2px solid black;
+  }
 
-    .burger-menu ul li a{
+  .burger-menu ul li a {
+    display: block;
+    height: 100%;
+    font-size: 3rem;
+    padding: 30px 0;
+    flex-basis: 100%;
+    text-align: center;
+  }
 
-        display: block;
-        height: 100%;
-        font-size: 3rem;
-        padding: 30px 0;
-        flex-basis: 100%;
-        text-align: center;
-        
-    }
+  .wrapper-main {
+    width: calc(100% - 40px);
+  }
 
-    .wrapper-main {
-        width: calc(100% - 40px);
-        
-    }
+  .left {
+    /* background-color: blue; */
+    padding-left: 20px;
+  }
 
+  /* This will hide the menu */
 
-    .left {
-        /* background-color: blue; */
-        padding-left: 20px;
-        
-    }
+  .menu-items {
+    display: none;
+  }
 
-/* This will hide the menu */
+  .sm-links {
+    padding-right: 20px;
+  }
 
-    .menu-items {
-        display: none;
-        
-    }
+  .footer-testemoni {
+    display: none;
+  }
 
-    .sm-links {
-        padding-right: 20px;
-        
-    }
+  .footer-getintouch {
+    margin: 0 0 60px;
+  }
 
+  .footer-sitemap {
+    flex-wrap: wrap;
+  }
 
-    
-    .footer-testemoni {
-        display: none;
-        
-    }
-    
-  
-    .footer-getintouch {
-        margin: 0 0 60px;
+  .footer-sitemap a {
+    line-height: 30px;
+  }
 
-       
-    }
-    
-    
-    .footer-sitemap {
-        flex-wrap: wrap;
-    
-    }
-    
-    .footer-sitemap a{
-        line-height: 30px;
-    }
-    
-    .footer-sitemap a:hover{
-        color: red;
-    }
-    
-    
-    .footer-sitemap ul:nth-child(1){
-        border-left: none;
-        padding-left: 0;
-       
-    }
-    
-    .footer-sitemap ul:nth-child(1),
-    .footer-sitemap ul:nth-child(2),
-    .footer-sitemap ul:nth-child(3) {
-        flex-basis: 100%;
-        text-align: center;
-        padding-bottom: 20px;
-    
-    }
-    
-    
-    .footer-sitemap p {
-       line-height: 1.25;
-       padding: 0 20px;
-    }
-    
-    .footer-sitemap ul:nth-child(4) {
-        flex-grow: 1;
-        
-    }
-    
-    .footer-sitemap ul:nth-child(4) li{
-        text-align: center;
-        
-    }
+  .footer-sitemap a:hover {
+    color: red;
+  }
+
+  .footer-sitemap ul:nth-child(1) {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .footer-sitemap ul:nth-child(1),
+  .footer-sitemap ul:nth-child(2),
+  .footer-sitemap ul:nth-child(3) {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .footer-sitemap p {
+    line-height: 1.25;
+    padding: 0 20px;
+  }
+
+  .footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+  }
+
+  .footer-sitemap ul:nth-child(4) li {
+    text-align: center;
+  }
 }
